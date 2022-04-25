@@ -1,0 +1,4 @@
+operation
+1. read
+2. write 
+this is a string written by file operation in Python. 

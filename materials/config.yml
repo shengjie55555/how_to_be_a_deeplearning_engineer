@@ -1,0 +1,39 @@
+- url : /api/user/login
+  method : post
+  detail : 正常登录
+  data :
+    username : niuhanyang
+    passwd : aA123456
+  check :
+    - userId
+    - sign
+    - '111'
+    - 222
+
+- url : /api/user/login
+  method : post
+  detail : 密码错误
+  data :
+    username : niuhanyang
+    passwd : aA12333
+  check :
+      - 密码错误
+
+- url : /api/user/login
+  method : post
+  detail : 不传密码
+  data :
+    username : niuhanyang
+  check :
+    - 必填参数未填
+- check:
+  - userId
+  - sign
+  - '111'
+  - 222
+  data:
+    passwd: aA123456
+    username: Shengjie Wu
+  detail: "\u6B63\u5E38\u767B\u5F55"
+  method: post
+  url: /api/user/login
