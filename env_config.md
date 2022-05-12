@@ -6,7 +6,7 @@ __说明__：以下配置方法在Ubuntu20.04, 21.10, 22.04均可行。硬件配
    ```shell
    sudo apt-get install fcitx-googlepinyin
    ```
-1. 配置language support
+2. 配置language support
    1. 打开language support：最下面一行Keyboard input method system，默认是iBus，点击下拉单切换到fcitx.
    2. 重启系统.
    3. 在右上角状态栏点击键盘图标，在下拉单里选择倒数第三个Configure进入配置界面.
