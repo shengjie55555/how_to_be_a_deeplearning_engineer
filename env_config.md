@@ -28,13 +28,18 @@ __说明__：以下配置方法在Ubuntu20.04, 21.10, 22.04均可行。硬件配
    sudo dpkg -i electron-ssr.deb
    ```
 ## 安装cuda、cudnn
-1. 下载cuda: https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64
+1. 下载cuda: https://developer.nvidia.com/cuda-toolkit-archive
 2. 下载cudnn: https://developer.nvidia.com/rdp/cudnn-archive
 3. 安装cuda
    ```shell
    sudo bash cuda_10.2.89_440.33.01_linux.run --toolkit --silent --override
    ```
-4. 安装cudnn
+4. 添加环境变量
+   ```shell
+   export PATH=/usr/local/cuda-11.1/bin:$PATH
+   export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64:$LD_LIBRARY_PATH
+   ```
+5. 安装cudnn
    1. 解压cudnn
    2. 复制库文件和头文件到/usr/local/cuda-11.1/
       ```shell
