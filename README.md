@@ -5,6 +5,7 @@
 [1.环境配置](env_config.md)  
 [2.Python](python_tutorial.ipynb)  
 [3.PyTorch](pytorch_tutorial.ipynb)  
+[4.C++](c++_basic.md)
 
 ## ToDo
 1. GNN  
