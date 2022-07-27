@@ -2,10 +2,18 @@
 本仓库包括深度学习所需要的一些必备知识：环境配置、编程语言和网络结构等信息。  
   
 ## 目录
+### 环境搭建
 [1.环境配置](env_config.md)  
-[2.Python](python_tutorial.ipynb)  
-[3.PyTorch](pytorch_tutorial.ipynb)  
-[4.C++](c++_basic.md)
+
+### 编程语言
+[1.Python](python_tutorial.ipynb)   
+[2.C++](c++_basic.md)  
+
+### 深度学习框架
+[1.PyTorch](pytorch_tutorial.ipynb)  
+
+### 深度学习理论
+[1. Deep Learning](deep_learning.md)
 
 ## ToDo
 1. GNN  
