@@ -15,6 +15,9 @@
 ### 深度学习理论
 [1. Deep Learning](deep_learning.md)
 
+### LeetCode
+[1. LeetCode 刷题记录](leetcode.md)
+
 ## ToDo
 1. GNN  
 2. Transformer  
