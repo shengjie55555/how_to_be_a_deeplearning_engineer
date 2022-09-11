@@ -40,6 +40,8 @@ int main() {
 5. 删除链表倒数第N个节点：https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
 6. 环形链表Ⅱ：https://leetcode.cn/problems/linked-list-cycle-ii/
 7. 链表排序：https://leetcode.cn/problems/7WHec2/
+8. K个一组反转链表：https://leetcode.cn/problems/reverse-nodes-in-k-group/
+9. 重排链表：https://leetcode.cn/problems/reorder-list/
 
 # 哈希表
 1. 有效的字母异位词：https://leetcode.cn/problems/valid-anagram/
@@ -87,10 +89,42 @@ int main() {
 2. 中序遍历：https://leetcode.cn/problems/binary-tree-inorder-traversal/
 3. 后序遍历：https://leetcode.cn/problems/binary-tree-postorder-traversal/
 4. 层序遍历：https://leetcode.cn/problems/binary-tree-level-order-traversal/
+5. 翻转二叉树：https://leetcode.cn/problems/invert-binary-tree/
+6. 对称二叉树：https://leetcode.cn/problems/symmetric-tree/
+7. 二叉树的最大深度：https://leetcode.cn/problems/maximum-depth-of-binary-tree/
+8. 二叉树的最小深度：https://leetcode.cn/problems/minimum-depth-of-binary-tree/
+9. 完全二叉树的节点个数：
+10. 平衡二叉树：
+11. 二叉树的所有路径：
+12. 左叶子之和：
+13. 找树左下角的值：
+14. 路径总和：
+15. 从中序和后序遍历序列构造二叉树：
+16. 最大二叉树：
+17. 合并二叉树：
+18. 二叉搜索树的搜索：
+19. 验证二叉搜索树：https://leetcode.cn/problems/validate-binary-search-tree/
+20. 二叉搜索树的最小绝对差：
+21. 二叉搜索树的众数：
+22. 二叉树的最近公共祖先：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
+23. 二叉搜索树的最近公共祖先：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/
+24. 二叉搜索树中的插入操作：
+25. 删除二叉搜索树中的节点：
+26. 修建二叉搜索树：
+27. 将有序数组转换为二叉搜索树：
+28. 把二叉搜索树转换为累加树：
+29. 二叉搜索树的后序遍历序列：https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/
 
 ## 回溯
 1. 全排列：https://leetcode.cn/problems/permutations/
 2. 全排列Ⅱ：https://leetcode.cn/problems/permutations-ii/
+
+# dfs & bfs
+1. 岛屿数量：https://leetcode.cn/problems/number-of-islands/
+2. 统计子岛屿：https://leetcode.cn/problems/count-sub-islands/
+3. 岛屿的最大面积：https://leetcode.cn/problems/max-area-of-island/
+4. 太平洋大西洋水流问题：https://leetcode.cn/problems/pacific-atlantic-water-flow/
+5. **二进制矩阵中的最短路径**：https://leetcode.cn/problems/shortest-path-in-binary-matrix/
 
 ## 贪心算法
 1. 分发饼干：
@@ -100,7 +134,6 @@ int main() {
 5. 跳跃游戏：https://leetcode.cn/problems/jump-game/
 6. 跳跃游戏Ⅱ：https://leetcode.cn/problems/jump-game-ii/
 7. K次取反后最大化数组和：https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/
-
 
 ## 动态规划
 1. 斐波那契数：
@@ -129,18 +162,19 @@ int main() {
 24. 买卖股票的最佳时机Ⅳ：
 25. 最佳买卖股票时机含冷冻期：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 26. 买卖股票的最佳时机含手续费：
-27. 最长递增子序列：
-28. 最长连续递增子序列：
-29. 最长重复子数组：
+27. 最长递增子序列：https://leetcode.cn/problems/longest-increasing-subsequence/
+28. 最长连续递增子序列：https://leetcode.cn/problems/longest-continuous-increasing-subsequence/
+29. 最长重复子数组：https://leetcode.cn/problems/maximum-length-of-repeated-subarray/
 30. 最长公共子序列：
 31. 最大子序和：https://leetcode.cn/problems/maximum-subarray/
 32. 判断子序列：
-33. 不同的子序列：
+33. 不同的子序列：https://leetcode.cn/problems/distinct-subsequences/
 34. 两个字符串的删除操作：
-35. 编辑距离：
-36. 回文子串：
-37. 最长回文子序列：
+35. 编辑距离：https://leetcode.cn/problems/edit-distance/
+36. 回文子串：https://leetcode.cn/problems/palindromic-substrings/
+37. 最长回文子序列：https://leetcode.cn/problems/longest-palindromic-subsequence/
 38. **最大正方形**：https://leetcode.cn/problems/maximal-square/
+39. **最小路径之和**：https://leetcode.cn/problems/0i0mDW/
 
 ## 单调栈
 1. 每日温度：https://leetcode.cn/problems/daily-temperatures/
@@ -148,3 +182,10 @@ int main() {
 3. 下一个更大元素Ⅱ：https://leetcode.cn/problems/next-greater-element-ii/
 4. 接雨水：https://leetcode.cn/problems/trapping-rain-water/
 5. 柱状图中最大的矩形：https://leetcode.cn/problems/largest-rectangle-in-histogram/
+
+## 迷宫
+1. 创建迷宫
+   1. Prim算法：https://blog.csdn.net/qq_38677814/article/details/79745659
+      1. 用一个大矩阵代表maze，包括墙和边缘，初始化（1，1）为起点，bfs添加墙体
+      2. 随机选择一个墙体，并按照方向穿过墙体，如果下一位置是墙体则拆掉，重新bfs，如果不是，不需要bfs，删除选中的墙体
+2. 
