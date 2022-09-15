@@ -18,6 +18,9 @@
 ### LeetCode
 [1. LeetCode 刷题记录](leetcode.md)
 
+### Git
+[1. Git Tutorial](git_tutorial.md)
+
 ## ToDo
 1. GNN  
 2. Transformer  
