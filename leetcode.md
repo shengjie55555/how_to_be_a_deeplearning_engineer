@@ -27,10 +27,11 @@ int main() {
 
 # 数组
 1. 二分查找：https://leetcode.cn/problems/binary-search/
-2. 移除元素：https://leetcode.cn/problems/remove-element/
-3. 有序数组的平方：https://leetcode.cn/problems/squares-of-a-sorted-array/
-4. 长度最小的子数组：https://leetcode.cn/problems/minimum-size-subarray-sum/
-5. 螺旋矩阵Ⅱ：https://leetcode.cn/problems/spiral-matrix-ii/
+2. 分配给商店的最多商品的最小值：https://leetcode.cn/problems/minimized-maximum-of-products-distributed-to-any-store/
+3. 移除元素：https://leetcode.cn/problems/remove-element/
+4. 有序数组的平方：https://leetcode.cn/problems/squares-of-a-sorted-array/
+5. 长度最小的子数组：https://leetcode.cn/problems/minimum-size-subarray-sum/
+6. 螺旋矩阵Ⅱ：https://leetcode.cn/problems/spiral-matrix-ii/
 
 # 链表
 1. 移除链表元素：https://leetcode.cn/problems/remove-linked-list-elements/
@@ -196,6 +197,7 @@ int main() {
 38. 最长回文子序列：https://leetcode.cn/problems/longest-palindromic-subsequence/
 39. **最大正方形**：https://leetcode.cn/problems/maximal-square/
 40. **最小路径之和**：https://leetcode.cn/problems/0i0mDW/
+41. **带权重的区间调度问题**：https://www.jianshu.com/p/3a1d5cecfbe5
 
 ## 单调栈
 1. 每日温度：https://leetcode.cn/problems/daily-temperatures/
@@ -204,9 +206,14 @@ int main() {
 4. 接雨水：https://leetcode.cn/problems/trapping-rain-water/
 5. 柱状图中最大的矩形：https://leetcode.cn/problems/largest-rectangle-in-histogram/
 
+## 前缀和
+1. 和为k的子数组：https://leetcode.cn/problems/subarray-sum-equals-k/
+
 ## 迷宫
 1. 创建迷宫
    1. Prim算法：https://blog.csdn.net/qq_38677814/article/details/79745659
       1. 用一个大矩阵代表maze，包括墙和边缘，初始化（1，1）为起点，bfs添加墙体
       2. 随机选择一个墙体，并按照方向穿过墙体，如果下一位置是墙体则拆掉，重新bfs，如果不是，不需要bfs，删除选中的墙体
-2. 
+
+## 设计类
+1. LRU缓存：https://leetcode.cn/problems/lru-cache/
