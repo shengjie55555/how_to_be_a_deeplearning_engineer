@@ -91,3 +91,10 @@ https://blog.csdn.net/u013685264/article/details/123206768
    catkin_make
    source ./devel/setup.bash
    ```
+
+# Using docker container with vscode
+1. 安装插件
+   1. Remote、Docker、ROS
+2. 点击Docker插件start一个容器，或者命令行创建一个容器
+3. 点击Remote Explore在上方[SSH Targets / Containers]中选择Containers
+4. 在出现的Containers中选择相应的容器，右键然后Attach to Container即可进入容器开发环境
