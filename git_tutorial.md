@@ -58,7 +58,7 @@ git checkout [file name]  # 在缓存区中拉取版本还原
    ```
 2. 在github网页上分别添加key
 3. 将ssh密钥加入ssh-agent进行管理
-   1. 新建一个config文件（如果有直接修改，如有则新建），内容如下：
+   1. 新建一个config文件（如果有直接修改，没有则新建），内容如下：
         ```shell
         Host github.com
 		User shengjie5
@@ -74,3 +74,12 @@ git checkout [file name]  # 在缓存区中拉取版本还原
 IdentityFile ~/.ssh/id_ed25518
         ```
 4. 此时如果需要clone shengjie55555账户的repo，需要将 git@github.com:用户名/项目名.git 改成 git@work.com:用户名/项目名.git 即可（这里的work和config里面是对应的）
+
+## tig
+tig是基于终端的git客户端，基本逻辑是包含多个view: main, diff, log, tree, status, stage等等，通过不同的快捷键进入。
+* main: 提交时间，作者和commit的内容，通过k/j上下移动，h打开帮助界面，q退出
+* diff: 可以看到具体的文件改动，在main界面中移动光标按d/enter进入
+* log: 在main界面中按l进入，类似git log，内容更详细
+* tree: 在main界面按t进入，类似终端tree的效果，选中文件按e可以采用vim直接编辑
+* status: 按s进入，类似git status的效果，选中没有staged的文件按u可以添加到staged文件，反之亦可，也可以移动光标到Changes not staged for commit: 然后按u直接添加所有未staged的文件
+* stage: 在Unstage changes或者Staged changes行按enter进入，通过光标选中某行，按1可以添加某行到staged/unstaged文件
