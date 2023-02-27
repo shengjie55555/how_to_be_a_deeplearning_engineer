@@ -12,6 +12,12 @@ git checkout [branch]  # 切换到某分支
 git merge [branch]  # 合并指定分支到当前分支
 git push  # 将本地仓库push到远程仓库
 git checkout [file name]  # 在缓存区中拉取版本还原
+git branch -f [branch_name] [commit id]  # 强制移动分支
+git reset  # 撤销分支中某个commit之后的所有变更
+git revert  # 撤销分支中某个commit，保留后面的commit，可能会有冲突，需要手动解决后重新commit  
+git cherry-pick [commit id]  # 将某个commit复制到当前所在的位置（HEAD）下面
+git rebase -i [commit id]  # 交互式rebase，重新排列commit id之后的commit
+git tag [version] [commit id]  # 打标签
 ```
 
 ## pull request
@@ -40,6 +46,17 @@ git checkout [file name]  # 在缓存区中拉取版本还原
 4. rebase解决冲突
    1. 如果git rebase master的时候提示出现冲突，可以在解决冲突后，git add，然后再git rebase --continue。
    2. 提示冲突后，.git目录下会产生一个.COMMIT_EDITMSG.swp 的交换文件，只有 git rebase --continue 或者 --skip 或者 --abort 后，交换文件才会删掉。**所以最好有始有终，不然swg文件不太好删！**
+5. 交互式rebase  
+交互式```rebase```指的是使用带参数```--interactive```的```rebase```命令, 简写为 ```-i```.当 rebase UI界面打开时, 你能做3件事:  
+   * 调整提交记录的顺序
+   * 删除你不想要的提交
+   * 合并提交
+
+## Q&A
+1. Q: ```git branch -f [branch] [commit id]```和```git checkout [branch] && git reset --hard [commit id]```的区别？   
+   * 前者无需修改HEAD，索引或工作副本，后者需要。
+   * 如果在当前分支下做了修改并没有提交，```git checkout```无法实现，前者仍然可以正常使用。
+   * 大型项目中，后者对磁盘I/O要求更高，前者只需要写入单个文件。
 
 ## .gitignore规则
 1. .gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。
