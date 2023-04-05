@@ -27,6 +27,25 @@ __说明__：以下配置方法在Ubuntu20.04, 21.10, 22.04均可行。硬件配
    ```shell
    sudo dpkg -i electron-ssr.deb
    ```
+
+## 安装flameshot
+1. apt安装
+   ```shell
+   sudo apt-get install flameshot
+   ```
+2. 使用
+   ```shell
+   flameshot gui
+   ```
+3. 设置快捷键  
+   ```python
+   {  
+      Name: Flameshot, 
+      Command: flameshot gui, 
+      Shotcut: F1
+   }
+   ```
+
 ## 安装cuda、cudnn
 1. 下载cuda: https://developer.nvidia.com/cuda-toolkit-archive
 2. 下载cudnn: https://developer.nvidia.com/rdp/cudnn-archive
