@@ -76,8 +76,8 @@ git tag [version] [commit id]  # 打标签
 2. 在github网页上分别添加key
 3. 将ssh密钥加入ssh-agent进行管理
    1. 新建一个config文件（如果有直接修改，没有则新建），内容如下：
-        ```shell
-        Host github.com
+      ```shell
+      Host github.com
 		User shengjie5
 		AddKeysToAgent yes
 		IgnoreUnknown UseKeychain
@@ -88,8 +88,8 @@ git tag [version] [commit id]  # 打标签
 		User shengjie55555
 		AddKeysToAgent yes
 		IgnoreUnknown UseKeychain
-IdentityFile ~/.ssh/id_ed25518
-        ```
+      IdentityFile ~/.ssh/id_ed25518
+      ```  
 4. 此时如果需要clone shengjie55555账户的repo，需要将 git@github.com:用户名/项目名.git 改成 git@work.com:用户名/项目名.git 即可（这里的work和config里面是对应的）
 
 ## tig
