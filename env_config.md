@@ -31,9 +31,15 @@ __说明__：以下配置方法在Ubuntu20.04, 21.10, 22.04均可行。硬件配
 1. 下载cuda: https://developer.nvidia.com/cuda-toolkit-archive
 2. 下载cudnn: https://developer.nvidia.com/rdp/cudnn-archive
 3. 安装cuda
+   1. 方法一
    ```shell
    sudo bash cuda_10.2.89_440.33.01_linux.run --toolkit --silent --override
    ```
+   2. 方法二
+   ```shell
+   sudo sh cuda_11.7.0_515.43.04_linux.run  
+   ```
+   如果提示Existing package manager installation of the driver found，选择continue，在下一步中去除driver项，之后选择install（选项前面没有X代表取消勾选）。
 4. 添加环境变量
    ```shell
    export PATH=/usr/local/cuda-11.1/bin:$PATH
@@ -43,8 +49,11 @@ __说明__：以下配置方法在Ubuntu20.04, 21.10, 22.04均可行。硬件配
    1. 解压cudnn
    2. 复制库文件和头文件到/usr/local/cuda-11.1/
       ```shell
-      sudo cp cuda/lib64/* /usr/local/cuda-11.1/lib64/
-      sudo cp cuda/include/* /usr/local/cuda-11.1/include/
+      tar -xvf cudnn-linux-x86_64-8.5.0.96_cuda11-archive.tar.xz
+      cd cudnn-linux-x86_64-8.5.0.96_cuda11-archive/
+      sudo cp include/cudnn*.h /usr/local/cuda/include
+      sudo cp -P lib/libcudnn* /usr/local/cuda/lib64
+      sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
       ```
 ## 安装Anaconda
 1. 下载: https://www.anaconda.com/
