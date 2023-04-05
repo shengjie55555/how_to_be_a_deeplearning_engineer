@@ -1,3 +1,17 @@
+# Install Docker
+1. 安装教程
+   1. https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine
+   2. 采用Install using the apt repository方法
+   3. 不要用snap安装，否则会出现docker无法使用宿主机的gpu，即便安装了nvidia-container-toolkit
+2. 解除sudo
+   ```shell
+   sudo groupadd docker
+   sudo usermod -aG docker ${USER}
+   # 或者采用如下方式
+   sudo chmod 666 /var/run/docker.sock
+   ```
+
+
 # Using ROS with ROS official image
 1. 下载image
    ```shell
