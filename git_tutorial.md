@@ -52,6 +52,11 @@ git tag [version] [commit id]  # 打标签
    * 删除你不想要的提交
    * 合并提交
 
+## How to pull specific directory with git
+1. 添加远程仓库: ```git remote add remote_name git_ssh_link```
+2. 拉取远程分支: ```git fetch remote_name branch_name```
+3. 拉取某个文件夹: ```git checkout remote_name/branch_name directory_name```
+
 ## Q&A
 1. Q: ```git branch -f [branch] [commit id]```和```git checkout [branch] && git reset --hard [commit id]```的区别？   
    * 前者无需修改HEAD，索引或工作副本，后者需要。
